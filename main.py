@@ -77,31 +77,6 @@ if __name__ == '__main__':
     print("____________________________________________________")
     print("____________________________________________________")
 
-    regex_anvelope = [r"215[ .,\/-]*?65[ .,/\/-]*?[Rr]?[ .,\/-]*17", r"235[ .,\/-]*?55[ .,/\/-]*?[Rr]?[ .,\/-]*19",
-                      r"245[ .,\/-]*?45[ .,/\/-]*?[Rr]?[ .,\/-]*17"]
-    regex_jante = [r"[Rr][ .\/,-]*?16", r"[Rr][ .\/,-]*?17", r"[Rr][ .\/,-]*?18", r"[Rr][ .\/,-]*?19",
-                   r"[Rr][ .\/,-]*?20", r"[Rr][ .\/,-]*?21"]
-    regex_caroserie = [r"(far(uri)?)", r"(arip([aă]*)?i?e?)", r"(b[aă]*r[aăi]*)[ ,.\/-]*?(spate)",
-                       r"(b[aă]*r[aăi]*)[ ,.\/-]*?(fa[țt]*[aă]*)", r"(ha[iye]*on)", r"(oglin((zi)|(d[aă]*)))]"]
-    regex_piese_interior = [r"(nav[iy]*ga[tț]*[iy]*e)",
-                            r"(nuc[aă]*)[ .,\/-]*(de)?[ .,\/-]*(schimb[aă]*tor)[ .,\/-]*(de)?[ .,\/-]*(vitez[eaă])",
-                            r"([ ,.\/-]hus[aăe][ .,\/-])", r"([ ,.\/-]volan[ .,\/-])", r"[ ,.\/-](box[aă])[ ,.\/-]]"]
-    regex_electronice = [r"(senzori?)[ ]*(parcare)", r"((calculator)|(computer))[ ]*(de)?[ ]*(bord)",
-                         r"(camer[aă])[ ]*(video)?((spate)|(auto)|(360)|(marsalier)|(masalier)|(marsarier))",
-                         r"(ceas(uri)?)[ ]*(de)?[ ]*(bord)"]
-    regex_marca_masina = [r"(bmw) | (bemve) | (bmve) | (bmv)",
-                          r"(vw) | (volkswagen) | (volsvagen) | (vozagan) | (volskvagen) | (volskwagen) | (volksvagen)",
-                          r"(audi) | (audy)", r"(mercedes)[ ,. \ /-]*(benz)"]
-    regex_stare_piesa = [r"(nou[aă]?)"]
-    regex_frane = [r"(\b)((discuri) | (disc))(.*)", r"(fr[âa]n[aăe])(\b)", r"(\b)(etrier[ie]?)(\b)",
-                   r"(\b)(pomp[aă])(.*)fr[âa]n[aăe](\b)", r"(\b)((butuc[i]?)(.*)fr[âa]n[aăe])(\b)",
-                   r"(\b)placu[tț][aeă][ ]*(de)?[ ]*fr[âa]n[aăe](\b)"]
-    regex_piese_motor = [r"[,.]?([Tt]urbin[aă])[.,]?", r"(\b)[iI]njector(\b) | (\b)[Ii]njectoare(\b)",
-                         r"(\b)[,.]?[vV]olant[aă][., /]?(\b)", r"(\b)[Aa]mbreiaj[e]?(\b) | (\b)[Aa]mbreaj[e]?(\b)"]
-    regexAll = [regex_anvelope, regex_jante, regex_caroserie, regex_piese_interior, regex_electronice,
-                regex_marca_masina,
-                regex_stare_piesa, regex_frane, regex_piese_motor]
-
     print("Anvelope 215 65 17, 235 55 19, respectiv 245 45 17:", occurencesfinal[0][1],occurencesfinal[0][1], occurencesfinal[0][2])
     print("Jante R16, R17, R18, R19, R20, respectiv R21: ", occurencesfinal[1][0], occurencesfinal[1][1],
           occurencesfinal[1][2], occurencesfinal[1][3], occurencesfinal[1][4])
